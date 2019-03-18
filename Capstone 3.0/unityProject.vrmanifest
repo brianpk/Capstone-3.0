@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.capstone2.0copy.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\DigitalDesignVR3\\Desktop\\Git\\Capstone-Bryan-Update\\Capstone 2.0 copy\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Capstone 2.0 copy [Testing]"
+        }
+      }
+    }
+  ]
+}
