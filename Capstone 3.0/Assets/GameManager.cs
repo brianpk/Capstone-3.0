@@ -9,16 +9,25 @@ public class GameManager : MonoBehaviour
     private Quaternion originalRot;
 
     public Transform alisonTransform;
+    public Transform skinTransform;
+    public Transform muscleTransform;
 
-    private Animator animTestGirl;
+    private Animator animGirl;
+    private Animator animSkin;
+    private Animator animMuscle;
+
     public GameObject TestGirl;
+    public GameObject manSkin;
+    public GameObject manMuscle;
 
     private void Start()
     {
         originalPos = alisonTransform.transform.position;
         originalRot = alisonTransform.transform.rotation;
 
-        animTestGirl = TestGirl.GetComponent<Animator>();
+        animGirl = TestGirl.GetComponent<Animator>();
+        animSkin = manSkin.GetComponent<Animator>();
+        animMuscle = manMuscle.GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -38,8 +47,12 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            animTestGirl.Play("Idle_Neutral_2");
+            animGirl.Play("Idle_Neutral_2");
+            animSkin.Play("Idle_Neutral_2");
+            animMuscle.Play("Idle_Neutral_2");
             alisonTransform.transform.SetPositionAndRotation(originalPos, originalRot);
+            skinTransform.transform.SetPositionAndRotation(originalPos, originalRot);
+            muscleTransform.transform.SetPositionAndRotation(originalPos, originalRot);
         }
 
 

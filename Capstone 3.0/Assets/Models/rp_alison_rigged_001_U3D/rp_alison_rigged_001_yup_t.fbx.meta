@@ -834,7 +834,7 @@ ModelImporter:
       parentName: upperarm_l
       position: {x: -0.31683186, y: -1.7549763e-16, z: 8.526512e-15}
       rotation: {x: 0, y: 1.2621775e-29, z: -0, w: 1}
-      scale: {x: 0.8, y: 1, z: 1}
+      scale: {x: 0.9, y: 1, z: 1}
     - name: hand_l
       parentName: lowerarm_l
       position: {x: -0.28018084, y: -1.6057901e-16, z: -3.694822e-15}
@@ -964,7 +964,7 @@ ModelImporter:
       parentName: upperarm_r
       position: {x: 0.3341645, y: 1.6861512e-16, z: -9.379164e-15}
       rotation: {x: 0, y: -1.3596311e-32, z: -0, w: 1}
-      scale: {x: 0.8, y: 1, z: 1}
+      scale: {x: 0.9, y: 1, z: 1}
     - name: hand_r
       parentName: lowerarm_r
       position: {x: 0.27403766, y: -7.7299274e-17, z: -3.694822e-15}
@@ -978,7 +978,7 @@ ModelImporter:
     - name: thumb_02_r
       parentName: thumb_01_r
       position: {x: 0.040049553, y: -1.7763568e-17, z: 0}
-      rotation: {x: 0.01241493, y: 0.022075472, z: -0.027975436, w: 0.9992878}
+      rotation: {x: 0.01241493, y: 0.02207547, z: -0.027975436, w: 0.99928766}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_03_r
       parentName: thumb_02_r
