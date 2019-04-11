@@ -79,6 +79,6 @@ void Update()
         laserLine.SetPosition(1, gunEnd.forward * laserRange);
     }
 
-
+    
 }
 }

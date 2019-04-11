@@ -15,6 +15,10 @@ TagManager:
   - Muscle
   - Girl
   - Mocap
+  - Cube1
+  - Cube2
+  - Cube3
+  - Cube4
   layers:
   - Default
   - TransparentFX
