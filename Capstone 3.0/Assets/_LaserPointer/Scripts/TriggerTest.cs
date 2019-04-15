@@ -42,6 +42,7 @@ public class TriggerTest : MonoBehaviour
         animGirl = TestGirl.GetComponent<Animator>();
         animSkin = manSkin.GetComponent<Animator>();
         animMuscle = manMuscle.GetComponent<Animator>();
+        animSkinSideLean = manSkinSideLean.GetComponent<Animator>();
 
         string[] joysticks = Input.GetJoystickNames();
         foreach (string j in joysticks)
@@ -176,5 +177,11 @@ public class TriggerTest : MonoBehaviour
             }
 
         }
+    }
+
+    private void SneakyTrick()
+    {
+        
+        manSkinSideLean.SetActive(false);
     }
 }
