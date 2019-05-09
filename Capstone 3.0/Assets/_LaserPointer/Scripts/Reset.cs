@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class Reset : MonoBehaviour
 {
     private Vector3 originalPos;
     private Quaternion originalRot;
@@ -19,7 +18,6 @@ public class GameManager : MonoBehaviour
     public GameObject TestGirl;
     public GameObject manSkin;
     public GameObject manMuscle;
-    public GameObject menu;
 
     private void Start()
     {
@@ -30,28 +28,17 @@ public class GameManager : MonoBehaviour
         animSkin = manSkin.GetComponent<Animator>();
         animMuscle = manMuscle.GetComponent<Animator>();
     }
-    // Update is called once per frame
-    void Update()
+
+    public void ResetPos()
     {
-
-       
-
-
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-
-        {
-            Debug.Log("Exited");
-            Application.Quit();
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            menu.SetActive(!menu.activeSelf);
-
-        }
-
-
+        animGirl.Play("Idle_Neutral_2");
+        animSkin.Play("Idle_Neutral_2");
+        animMuscle.Play("Idle_Neutral_2");
+        alisonTransform.transform.SetPositionAndRotation(originalPos, originalRot);
+        skinTransform.transform.SetPositionAndRotation(originalPos, originalRot);
+        muscleTransform.transform.SetPositionAndRotation(originalPos, originalRot);
     }
+
+    
+        
 }
