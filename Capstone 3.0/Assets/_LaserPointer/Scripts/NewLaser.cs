@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NewLaser : MonoBehaviour
 {
-
+    //I think this is old code. All updated code should be in "TriggerTest"
 public Transform gunEnd;
 
 public float laserRange = 50.0f;
@@ -19,7 +19,7 @@ public GameObject TestGirl;
 
 
 
-// Start is called before the first frame update
+
 void Start()
 {
     laserLine = GetComponent<LineRenderer>();
@@ -28,7 +28,7 @@ void Start()
 
 }
 
-// Update is called once per frame
+
 void Update()
 {
     laserLine.enabled = true;

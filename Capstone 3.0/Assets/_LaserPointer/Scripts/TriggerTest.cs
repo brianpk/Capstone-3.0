@@ -35,7 +35,7 @@ public class TriggerTest : MonoBehaviour
     void Start() //Monobehaviours without a Start function cannot be disabled in Editor, just FYI
 
     {
-
+        //this stores values so that we can reset the model if it falls through the floor
         originalPos = alisonTransform.transform.position;
         originalRot = alisonTransform.transform.rotation;
 
@@ -77,7 +77,7 @@ public class TriggerTest : MonoBehaviour
 
     private void Press(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
-        //put your stuff here
+        //this section will change the character model as well as which animation plays
         print("Success at " + Time.time);
 
         Vector3 rayOrigin = gunEnd.position;
@@ -151,7 +151,8 @@ public class TriggerTest : MonoBehaviour
                 manSkinSideLean.SetActive(true);
 
                 animSkinSideLean.Play("Side Lean");
-
+                
+                //see SneakyTrick() at bottom of code for explanation
                 Invoke("SneakyTrick", 27f);
 
             }
@@ -179,6 +180,7 @@ public class TriggerTest : MonoBehaviour
         }
     }
 
+    //For some reason the "Skin Man" would appear randomly after doing the "Side Lean" animation. I put this in as a safeguard to automatically turn off his mesh after
     private void SneakyTrick()
     {
         

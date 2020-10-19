@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.capstone2.0copy.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\DigitalDesignVR3\\Desktop\\Git\\Capstone-3.0\\Capstone 3.0\\actions.json",
+      "action_manifest_path": "C:\\Users\\Brian\\Desktop\\Git\\Capstone-3.0\\Capstone 3.0\\actions.json",
       "strings": {
         "en_us": {
           "name": "Capstone 2.0 copy [Testing]"
